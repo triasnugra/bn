@@ -121,7 +121,7 @@
       <input type="file" id="img-file" accept="image/*" style="display:none" onchange="handleImageSelect(event)">
       <div class="send-buttons">
         <button class="btn-send bunga" onclick="sendMessage('bunga')">Bunga 🌸</button>
-        <button class="btn-send nate"  onclick="sendMessage('nate')">Nate 🖤</button>
+        <button class="btn-send nate"  onclick="sendMessage('nate')">Nate 😎</button>
       </div>
     </div>
   </div>
@@ -200,7 +200,7 @@
         htmlBuffer += `<div class="date-divider"><span>${formatDate(dk)}</span></div>`;
         byDate[dk].forEach(msg => {
           const who = msg.sender === "bunga" ? "bunga" : "nate";
-          const senderLabel = who === "bunga" ? "Bunga 🌸" : "Nate 🖤";
+          const senderLabel = who === "bunga" ? "Bunga 🌸" : "Nate 😎";
           htmlBuffer += `
             <div class="bubble-row ${who}">
               <div class="bubble">
